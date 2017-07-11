@@ -57,7 +57,7 @@ The content is being pull out from googlesheet, any copy change must be done the
   5. `sudo reboot`
 
 
-In case of seeing the apache template when navegating to the url, you will have to kill apache and then follow the deployment steps again.
+In case of seeing the apache template when navigating to the url, you will have to kill apache and then follow the deployment steps again.
 Killing Apache: `sudo update-rc.d -f  apache2 remove`
 
 
