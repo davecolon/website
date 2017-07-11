@@ -20,15 +20,15 @@ IT'S GOT WHAT PLANTS CRAVE!
 Edit local server config in ./dev/env/local.json
 
 
-## Development
+### Development
 
-HTML (PUG)
-----------
+### HTML (PUG)
+
 For development we are using [PUGJS (also known as JADE)](https://www.npmjs.com/package/pug), the jade files are inside **views**, 
 **index.jade** correspond to the main code, **navbar.jade** to the navigation bar, and **layout.jade to the header tags.
 
-ASSETS
-------
+### ASSETS
+
 The folder **public** contains all the assets for the website:
 + **assets:**
 ⋅⋅⋅This folder has the documents, fonts, images and videos for the website
@@ -39,8 +39,8 @@ The folder **public** contains all the assets for the website:
 + **styles**
 ⋅⋅⋅This folder contain the [sass](http://sass-lang.com/guide) files for the styles.
 
-CMS
----
+### CMS
+
 The content is being pull out from googlesheet, any copy change must be done there.
 
 
