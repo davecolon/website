@@ -50,11 +50,11 @@ The content is being pull out from googlesheet, any copy change must be done the
 + Go to k-plus folder
 + Pull the last changes from the github repository `git pull`
 + Call the following commands to deploy the server:
-..1. sudo pm2 kill
-..2. sudo pm2 start dev/env/production.json
-..3. sudo pm2 startup
-..4. sudo pm2 save
-..5. sudo reboot
+⋅⋅1. sudo pm2 kill
+⋅⋅2. sudo pm2 start dev/env/production.json
+⋅⋅3. sudo pm2 startup
+⋅⋅4. sudo pm2 save
+⋅⋅5. sudo reboot
 
 
 In case of seeing the apache template when navegating to the url, you will have to kill apache and then follow the deployment steps again.
