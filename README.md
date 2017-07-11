@@ -20,7 +20,7 @@ IT'S GOT WHAT PLANTS CRAVE!
 Edit local server config in ./dev/env/local.json
 
 
-### Development
+## Development
 
 ### HTML (PUG)
 
