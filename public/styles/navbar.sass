@@ -1,0 +1,252 @@
+@font-face
+	font-family: font_Seravek
+	src: url(../assets/fonts/Seravek.ttc)
+
+$title_font: font_Seravek, Helvetica;
+
+nav
+	background: white
+	border-bottom: 1px solid $light_gray
+	box-sizing: border-box
+	font-family: $title_font
+	font-size: 1.5rem
+	margin: 0
+	padding: 0 2rem
+	padding-top: 1rem
+	position: fixed
+	text-align: center
+	top: 0
+	width: 100%
+	z-index: 4
+	
+	#nav_elements
+		float: left
+
+		#main-logo
+			max-width: 80px
+			min-width: 70px
+			width: 5%
+			cursor: pointer
+		
+		.hamMenu
+			display: none
+	
+	#menu-content
+		float: right
+		text-align: right
+		width: 84.5%
+		
+		ul
+			float: right
+			margin: 0 0
+			padding: 0
+			padding-top: 1rem
+			width: 90%
+			@media (max-width: 1025px)
+				font-size: 1.3rem
+		
+		li
+			cursor: pointer
+			display: inline-block
+			margin: 0 1%
+			
+			a
+				color: black
+				text-decoration: none
+				width: 100%
+				&:active
+					color: rgba(180, 180, 180, 1)
+			
+			div
+				border-left: none
+			
+			.selector
+				height: 10px
+				margin-top: 10px
+				opacity: 0
+				-webkit-transition: opacity 250ms ease-in-out
+    			-moz-transition: opacity 250ms ease-in-out
+    			-o-transition: opacity 250ms ease-in-out
+				transition: opacity 250ms ease-in-out
+
+				width: 100%
+				z-index: 3
+
+			&:hover
+				.selector
+					opacity: 1.0
+			
+			&.selected
+				.selector
+					opacity: 1.0
+
+		.menu_intro
+			&:hover
+				a
+					color: $dark_purple
+				.selector
+					background: $dark_purple
+		
+		.menu_theProduct
+			&:hover
+				a
+					color: $light_purple
+				.selector
+					background: $light_purple
+		
+		.menu_flavors
+			&:hover
+				a
+					color: $dark_red
+				.selector
+					background: $dark_red
+		
+		.menu_whoWeAre
+			&:hover
+				a
+					color: $light_red
+				.selector
+					background: $light_red
+		
+		.menu_videos
+			&:hover
+				a
+					color: $orange
+				.selector
+					background: $orange
+		
+		.menu_research
+			&:hover
+				a
+					color: $yellow
+				.selector
+					background: $yellow
+		
+		.menu_locations
+			&:hover
+				a
+					color: $green
+				.selector
+					background: $green
+
+		.menu_buyNow
+			&:hover
+				a
+					color: $dark_purple
+				.selector
+					background: $dark_purple
+
+//Nav bar media queries tablets & mobile devices			
+nav
+	@media (max-width: $mediaValueMobile)
+		padding: 0
+	
+		#nav_elements
+			float: none
+			padding: 1rem 0 0.5rem 1rem
+			padding-left: 1rem
+
+			.hamMenu
+				display: inline-block
+				float: right
+				max-width: 80px
+				min-width: 70px
+				width: 15%
+
+			#main-logo
+				display: inline-block
+				width: 15%
+		
+		#menu-content
+			display: -webkit-box  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+			display: -ms-flexbox  /* TWEENER - IE 10 */
+			display: -webkit-flex /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+			display: flex
+			float: none
+			height: 100vh
+			text-align: center
+			top: 5%
+			width: 100%
+
+			&.nav_hide
+				display: none
+
+			ul
+				float: none
+				font-size: 1.5rem
+				list-style-type: none
+				margin: 0
+				padding: 0 
+				vertical-align: middle
+				width: 100%
+
+			li
+				margin: 0 0
+				background: white
+				border-top: 1px solid $light_gray
+				box-sizing: border-box
+				display: -webkit-box  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+				display: -ms-flexbox  /* TWEENER - IE 10 */
+				display: -webkit-flex /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+				display: flex
+				height: 12.8vh  //height: 11.2vh
+				text-align: left
+				width: 100%
+
+				div
+					border-left: 1rem solid
+					display: -webkit-box  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+					display: -ms-flexbox  /* TWEENER - IE 10 */
+					display: -webkit-flex /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+					display: flex
+				a
+					margin: auto 0
+					padding: 0 2rem
+				
+				//to be fixed with the heigh media query
+				//@media (min-height: 730px)
+					//height: 13.4vh// height: 11.2vh 
+				
+				@media (min-height: 730px)
+					height: 13vh // height: 11.6vh
+					@media (min-height: 1000px)
+						height: 13.3vh  //height: 11.8vh
+
+				.selector
+					display: none
+
+			.menu_intro
+				div
+					border-left-color: $dark_purple
+
+			.menu_theProduct
+				div
+					border-left-color: $light_purple
+
+			.menu_flavors
+				div
+					border-left-color: $dark_red
+
+			.menu_whoWeAre
+				div
+					border-left-color: $light_red
+
+			.menu_videos
+				div
+					border-left-color: $orange
+
+			.menu_research
+				div
+					border-left-color: $yellow
+
+			.menu_locations
+				div
+					border-left-color: $green
+
+			.menu_buyNow
+				div
+					border-left-color: $dark_purple
+
+
+
+			

@@ -1,0 +1,20 @@
+{
+	"apps" : [{
+		"name"        : "www",
+		"script"      : "./bin/www",
+		"ignore_watch": [
+			"node_modules", 
+			"public",
+			".DS_Store",
+			"docs",
+			"dev",
+			"npm-debug.log",
+			"README.md"
+		],
+		"watch": true,
+		"env": {
+			"NODE_ENV": "local",
+			"PORT": 3000
+		}
+	}]
+}

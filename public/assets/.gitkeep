@@ -1,0 +1,5 @@
+assets go here.
+
+should probably track with git lfs.
+
+and upload to CDN for production builds.

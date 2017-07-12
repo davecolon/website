@@ -1,0 +1,10 @@
+{
+	"apps" : [{
+		"name"        : "www",
+		"script"      : "./bin/www",
+		"env": {
+			"NODE_ENV": "production",
+			"PORT": 80
+		}
+	}]
+}

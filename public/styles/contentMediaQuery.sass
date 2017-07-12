@@ -1,0 +1,833 @@
+.container
+	.hide:not(.extra)
+		display: none
+
+	.prev
+		background-repeat: no-repeat
+		background-size: cover
+		box-sizing: border-box
+		padding: 4rem 8rem
+		padding-bottom: 0rem
+
+		div
+			display: block
+			margin: 0 auto
+			width: 100%
+		
+		h1
+			font-size: 7rem
+			font-weight: 800
+			margin: 0
+		
+		h2
+			font-size: 8rem;
+			font-weight: bold
+			text-align: left
+			@media (max-width: 2040px)
+				font-size: 6rem
+				@media (max-width: 1700px)
+					font-size: 4rem
+	
+		h3
+			font-size: 6rem
+			font-weight: bold
+			margin: 0
+		
+		p, li
+			font-size: 2.1rem
+			text-align: left
+
+	.transition
+		height: 100%
+		margin: 0
+		padding: 0
+		
+		img
+			margin: 0
+			width: 100%
+
+	#tran_screen
+		background-image: url("../assets/img/desktop_transition.jpg")
+		background-repeat: no-repeat
+		background-size: cover
+		height: 60vh
+
+	#intro	
+		display: block
+		height: 100%
+		overflow: hidden
+		text-align: center
+
+		h1
+			color: $green
+		h1.subtitle
+			color: black
+		img
+			width: 45%
+			max-width: 350px
+
+	#theProduct
+		background-image: url("../assets/img/desktop_the_product_bg.jpg")
+		display: block
+		padding-top: 8rem
+		padding-bottom: 4rem
+		height: 100%
+		p
+			width: 80%
+			@media (max-width: 1700px)
+				width: 90%
+				font-size: 1.8rem
+
+		
+		h2
+			line-height: 1.3em
+			margin-bottom: 0.5em
+			width: 95%
+			@media (max-width: 1300px)
+				width: 100%
+				font-size: 
+
+		.about_mobile
+			display: none
+
+		
+	#flavors
+		display: block
+		height: 100%
+		padding: 0
+
+		.flavor
+			background-repeat: no-repeat
+			background-size: cover
+			box-sizing: border-box
+			float: left
+			height: 95vh
+			position: relative
+			width: 33.33%
+			overflow: hidden
+			
+			@media (max-width: 1240px)
+				height: 90vh
+				width: 100%
+
+			h1
+				left: 98%
+				position: absolute
+				text-align: left
+				top: 3rem
+				-webkit-transform: rotate(90deg)
+				-moz-transform: rotate(90deg)
+				-ms-transform: rotate(90deg)
+				-o-transform: rotate(90deg)
+				transform: rotate(90deg)
+				
+				-webkit-transform-origin: 0 0% 0px
+				-moz-transform-origin: 0 0% 0px
+				-ms-transform-origin: 0 0% 0px
+				-o-transform-origin: 0 0% 0px
+				transform-origin: 0 0% 0px
+				
+				-webkit-transition: font-size 0.3s ease-in
+				-moz-transition: font-size 0.3s ease-in
+				-o-transition: font-size 0.3s ease-in
+				transition: font-size 0.3s ease-in
+
+				width: 140%
+				max-width: 600px
+				z-index: 2
+			
+			.nutritionInfo
+				height: 100%
+				
+				.nut_hide_info.hide
+					display: block
+					opacity: 0
+					visibility: hidden
+
+				.nut_hide_info
+					box-sizing: border-box
+					height: 100%
+					opacity: 1
+					padding: 2rem 1.5rem
+					
+					-webkit-transition: opacity 0.5s ease
+					-moz-transition: opacity 0.5s ease
+					-o-transition: opacity 0.5s ease
+					transition: opacity 0.5s ease
+					
+					.nut_info
+						img
+							max-height: 80vh
+					
+					div
+						position: absolute
+						width: 67%
+						padding-top: 0
+						opacity: 1
+						-webkit-transition: opacity 0.5s 0.4s ease, padding-top 0.8s 0.4s ease
+						-moz-transition: opacity 0.5s 0.4s ease, padding-top 0.8s 0.4s ease
+						-o-transition: opacity 0.5s 0.4s ease, padding-top 0.8s 0.4s ease
+						transition: opacity 0.5s 0.4s ease, padding-top 0.8s 0.4s ease
+					
+					div.hide
+						display: block
+						opacity: 0
+						padding-top: 3rem
+						-webkit-transition: opacity 0.5s ease, padding-top 0.8s ease
+						-moz-transition: opacity 0.5s ease, padding-top 0.8s ease
+						-o-transition: opacity 0.5s ease, padding-top 0.8s ease
+						transition: opacity 0.5s ease, padding-top 0.8s ease
+					
+
+			.nut_button
+				background-repeat: no-repeat
+				background-size: cover
+				bottom: 0
+				box-sizing: border-box
+				height: 30%				
+				position: absolute
+				right: 0
+				text-align: right
+				width: 50%
+				z-index: 2
+
+				p
+					cursor: pointer
+					display: inline-block
+					margin: 0 0.5rem
+					padding-right: 1rem
+				
+				img
+					cursor: pointer
+					vertical-align: sub
+					width: 1.6rem
+
+				.nut_button_wrapper
+					bottom: 2rem
+					position: absolute
+
+			@media (max-width: 1600px)
+				h1
+					font-size: 7rem
+				.flavor_info
+					p
+						font-size: 1.7rem
+
+				p
+					font-size: 1.5rem
+
+		.fruit_punch
+			background-image: url("../assets/img/mobile_fruitpunch_flavor_bg.jpg") //$dark_red
+			.nut_hide_info
+				background: $dark_red
+			.nut_button
+				background-image: url("../assets/img/fruit_punch_btn_bg.svg")
+			h1
+				color: $dark_red
+		
+		.lime
+			background-image: url("../assets/img/mobile_lime_flavor_bg.jpg") //$green
+			.nut_hide_info
+				background: $green
+			.nut_button
+				background-image: url("../assets/img/lime_btn_bg.svg")
+			h1
+				color: $green
+		
+		.orange
+			background-image: url("../assets/img/mobile_orange_flavor_bg.jpg") //$orange
+			.nut_hide_info
+				background: $orange
+			.nut_button
+				background-image: url("../assets/img/orange_btn_bg.svg")
+			h1
+				color: $orange
+		
+		.flavor
+			.white_title
+				color: white
+
+
+	#whoWeAre
+		background-image: url("../assets/img/desktop_who_we_bg.jpg")
+
+		div
+			display: inline-block
+			p
+				width: 45%
+				@media (max-width: 1400px)
+					width: 65%
+					@media (max-width: 1000px)
+						width: 80%
+
+	#videos
+		display: block
+		height: 100%
+		padding: 0
+		
+		.internal_wrapper
+			overflow: hidden
+			position: relative
+			white-space: nowrap
+
+		.kvideo
+			display: inline-block
+			position: relative
+			
+			img
+				width: 100%
+			
+			.video_play_btn
+				box-sizing: border-box
+				cursor: pointer
+				left: 46%
+				max-width: 150px
+				min-width: 30px
+				padding: 0
+				position: absolute
+				top: 40%
+				width: 10%
+				z-index: 2
+				
+			.video_play_btn:active
+				padding: 0.2%
+
+			.video_content
+				background: rgba(0,0,0,0.7)
+				box-sizing: border-box
+				height: 100vh
+				left: 0
+				padding: 2rem 5rem
+				position: absolute
+				text-align: center
+				top: 0
+				width: 100%
+				z-index: 3
+			
+			.close_video
+				cursor: pointer
+				opacity: 0.5
+				position: absolute
+				right: 1rem
+				top: 1rem
+				width: 50px
+
+			video
+				width: 100%
+				max-width: 1920px
+
+		.video_container
+			position: relative
+		
+		.carousel_navegation
+			height: 100%
+			max-height: 95vh
+			position: absolute
+			
+			img
+				width: 100%
+			
+			.arrows
+				box-sizing: border-box
+				padding: 0 1rem
+				position: absolute
+				top: 45%
+				width: 100%
+				z-index: 1
+			
+				div:not(.cleaner)
+					cursor: pointer
+					width: 3rem
+
+					&:active
+						opacity: 0.5
+						width: 2.9rem
+			
+			.dots
+				bottom: 4rem
+				position: absolute
+				z-index: 1
+				
+				ul
+					padding: 0
+					text-align: center
+				
+					li
+						display: inline-block
+						margin: 0 1.5rem
+						width: 2rem
+
+						img
+							box-sizing: border-box;
+							cursor: pointer
+							opacity: 0.7
+							padding: 0.3rem
+							vertical-align: baseline
+							-webkit-transition: opacity 0.5s /* Safari */
+							-moz-transition: opacity 0.5s
+							-o-transition: opacity 0.5s
+							transition: opacity 0.5s
+
+							&:hover
+								width: 102%
+						
+				.active
+					opacity: 1
+					padding: 0
+
+
+	#research
+		height: 100%
+		margin-top: 4rem
+		
+		h3, p
+			color: $dark_purple
+			margin: 0
+
+		.research_container
+			margin-top: 3rem
+			text-align: left
+			width: 100%
+			
+			.res_element
+				border-top: 3px solid $light_gray
+				box-sizing: border-box
+				display: inline-block
+				padding: 3rem 0
+
+				.more_research
+					cursor: pointer
+					display: inline-block
+					margin-top: 2rem
+					width: 4rem
+					
+				.more_research:active
+					width: 3.9rem
+					
+				p
+					color: black
+					text-align: left
+					
+				.res_title
+					color: $dark_purple
+					font-size: 3rem
+					font-weight: bold
+					
+				.res_extraInfo
+					height: 100%
+					opacity: 1
+					padding-top: 1.5rem
+					display: inline 
+					-webkit-transition: font-size 0.3s, height 0.5s ease 0.1s, opacity 0.5s ease 0.1s, padding-top 0.5s ease 0.1s 
+					-moz-transition: font-size 0.3s, height 0.5s ease 0.1s, opacity 0.5s ease 0.1s, padding-top 0.5s ease 0.1s 
+					-o-transition: font-size 0.3s, height 0.5s ease 0.1s, opacity 0.5s ease 0.1s, padding-top 0.5s ease 0.1s 
+					transition: font-size 0.3s, height 0.5s ease 0.1s, opacity 0.5s ease 0.1s, padding-top 0.5s ease 0.1s 
+					
+			.extra
+				display: block
+				height: 100%
+				opacity: 1
+				padding: 3rem 0
+				
+				-webkit-transition: all 0.5s ease /* Safari */
+				-moz-transition: all 0.5s ease
+				-o-transition: all 0.5s ease
+				transition: all 0.5s ease
+
+				p, a, img
+					-webkit-transition: all 0.8s ease /* Safari */
+					-moz-transition: all 0.8s ease
+					-o-transition: all 0.8s ease
+					transition: all 0.8s ease	
+
+				.res_title
+					font-size: 3rem
+			
+			.hide_research
+				height: 0%
+				opacity: 0
+				overflow: hidden
+				padding: 0 0
+
+				.res_title, .res_resume	
+					height: 0
+
+				.more_research
+					margin-top: 0
+					width: 0
+
+			
+			.res_extraInfo.hide_research
+				height: 0
+				opacity: 0
+				overflow: hidden
+				font-size: 0
+				padding: 0
+				-webkit-transition: font-size 0.3s 0.2s, height 0.5s ease, opacity 0.5s ease, padding-top 0.5s ease 
+				-moz-transition: font-size 0.3s 0.2s, height 0.5s ease, opacity 0.5s ease, padding-top 0.5s ease 
+				-o-transition: font-size 0.3s 0.2s, height 0.5s ease, opacity 0.5s ease, padding-top 0.5s ease 
+				transition: font-size 0.3s 0.2s, height 0.5s ease, opacity 0.5s ease, padding-top 0.5s ease 
+
+			.res_btn_more
+				border-top: 3px solid $light_gray
+				cursor: pointer
+				padding: 1rem 0
+			
+			.res_btn_more p:active
+				color: $light_purple
+
+	#locations
+		background: $dark_purple
+		height: 50vh
+		padding-bottom: 1rem
+		position: relative
+
+		p
+			margin-top: 0
+			width: 80%
+		
+		.loc_content	
+			ul
+				-webkit-column-count: 2
+				-moz-column-count: 2
+				column-count: 2
+
+				margin-bottom: 6rem
+				margin-top: 4rem			
+			
+			li
+				//float: left
+				font-weight: bold
+				list-style-type: none
+				padding: 0.5em 0 0 0
+				text-align: left
+				//width: 50%
+
+		.footer
+			bottom: 1rem
+			box-sizing: border-box;
+			left: 0
+			padding-top: 6rem
+			position: absolute
+			
+			p, a, span
+				font-size: 1.2rem
+				font-weight: 300
+				margin-top: 0
+				text-align: center
+				display: inline
+				color: white
+				text-decoration: none
+
+			a
+				margin-left: 0.5rem;
+				margin-right: 0.5rem;
+			
+			a:hover
+				text-decoration: underline $light_gray
+				color: $light_gray
+
+
+// Media value for medium mobile devices & tablet
+.container
+	@media (max-width: $mediaValueMobile)
+		.prev
+			height: 75vh
+			padding: 2rem 1.5rem
+			h1
+				font-size: 5.5rem
+			h2
+				font-size: 2.5rem
+			h3
+				font-size: 3.5rem
+			p, li
+				font-size: 1.8rem 
+
+		#tran_screen
+			background-image: url("../assets/img/mobile_transition.jpg")
+
+		#intro
+			height: 75vh
+			img
+				width: 40%
+				max-width: 253px
+
+		#theProduct
+			background-image: url("../assets/img/mobile_the_product_bg.jpg")
+			padding-top: 4rem
+			h2
+				line-height: inherit
+
+			p, h2
+				text-align: left
+				width: 100%
+
+			.about_desktop
+				display: none
+
+			.about_mobile
+				display: block
+
+		#flavors
+			display: block
+			height: 100%
+			text-align: left
+			
+			.internal_wrapper
+				text-align: left
+			
+			h2, p, .nut_button
+				font-size: 1.3rem
+				margin: 0
+				text-align: left
+
+			.flavor
+				h1
+					font-size: 6rem
+
+				.nut_hide_info
+					p
+						font-size: 1.8rem
+						margin: 0.4rem 0
+					div
+						width: 70%
+
+				.nut_button_wrapper	
+					bottom: 0.4rem
+
+				.white_title
+					font-size: 6rem
+
+		#whoWeAre
+			background-image: url("../assets/img/mobile_who_we_bg.jpg")
+			div
+				p
+					width: 100%
+
+		#videos
+			height: 100%
+
+			.kvideo
+				.video_play_btn
+					left: 43%
+					width: 15%
+
+				.video_content
+					padding: 1rem 1rem
+				
+				.close_video
+					top: 0.5rem
+					right: 0.5rem
+					width: 20px
+
+			.carousel_navegation
+				
+				.arrows
+					div:not(.cleaner)
+						width: 1rem
+						&:active
+							width: 0.9rem
+				
+				.dots
+					bottom: 1rem
+					ul
+						margin: 0
+						li
+							margin: 0 1.3rem
+							width: 1rem
+							img
+								padding: 0.1rem
+		#research
+			display: block
+			padding: 0 0
+			padding-top: 2rem
+			
+			h3, p
+				padding: 0 1.5rem
+			.research_container
+				.res_element
+					border-top: 1px solid $light_gray
+					padding: 3rem 1.5rem
+
+					.more_research	
+						width: 3rem
+					
+					.more_research:active
+						width: 2.9rem
+		
+					p
+						width: 90%;
+
+					.res_title
+						font-size: 1.5rem
+						font-weight: 600
+				.extra				
+					padding: 3rem 1.5rem
+			
+					.res_title
+						font-size: 1.5rem
+				.hide_research
+					padding: 0 1.5rem
+					.more_research
+						width: 0
+
+				.res_btn_more
+					p
+						text-align: center
+			
+				.res_btn_more p:active
+					font-size: 1.75rem
+
+		#locations
+			display: block
+			height: inherit
+
+			p
+				margin-top: 1rem
+			
+			ul
+				margin-bottom: 4rem
+				margin-top: 2rem
+
+			.footer
+				p, a, span
+					font-size: 0.8rem
+					font-weight: normal
+				
+
+// Media value for landscape and small laptops
+.container
+	@media (max-height: $mediaHeightBreak) and (max-width: $mediaWidthLandScapeBreak)
+		.prev
+			h2
+				font-size: 4.7rem
+		
+			h3
+				font-size: 4.5rem
+			
+			p, li
+				font-size: 2.1rem
+		
+		#theProduct
+			h2
+				width: 100%
+			.about_desktop
+				display: none
+
+			.about_mobile
+				display: block
+
+		#flavors
+			.flavor
+				height: 91vh
+				h1
+					font-size: 5rem
+				.nut_button
+					.nut_button_wrapper
+						bottom: 1rem
+						p
+							font-size: 1.5rem
+							padding-right: 0
+				.flavor_info
+					p
+						font-size: 1.4rem
+	
+				.white_title
+					font-size: 5rem
+
+				@media (max-height: 640px)
+					h1
+						font-size: 3.5rem
+					.flavor_info
+						p
+							font-size: 1rem
+					.white_title
+						font-size: 3.5rem
+		#whoWeAre
+			div
+				p
+					width: 90%
+
+		#research
+			p
+				font-size: 1.5rem
+
+// Media value for small height
+.container
+	@media (max-height: 790px) and (min-width: 1240px)
+		#flavors
+			.flavor
+				h1 
+					font-size: 5rem
+
+				.nut_button
+					.nut_button_wrapper
+						p
+							padding-right: 0
+							font-size: 1.3rem
+
+				.flavor_info
+					p
+						font-size: 1.4rem
+
+				@media (max-height: 640px)
+					h1
+						font-size: 3.5rem
+					.flavor_info
+						p
+							font-size: 1rem
+					.white_title
+						font-size: 3.5rem
+// Media value for small mobile devices & tablet
+.container
+	@media (max-width: $mediaValueSmallPhones)
+		.prev	
+			h1
+				font-size: 3rem
+			h2
+				font-size: 1.5rem
+			h3
+				font-size: 2rem
+			p, li
+				font-size: 1.1rem
+		#intro
+			img
+				width: 60%
+
+		#theProduct
+			.about_mobile
+				font-size: 1rem
+		#flavors
+			.flavor
+				height: 88vh
+				h1
+					font-size: 3rem
+				.nut_button
+					.nut_button_wrapper
+						bottom: 1rem
+						img
+							width: 1.2rem
+						p
+							padding-right: 0
+							font-size: 1.1rem
+				.nut_hide_info
+					p
+						font-size: 1.1rem
+
+				.white_title
+					font-size: 3rem
+
+		#whoWeAre
+			height: 100%
+		#research
+			.research_container
+				p
+					font-size: 1rem
+				.res_btn_more p:active
+					font-size: 1.08rem
+		#locations
+			.footer
+				p, a, span
+					font-size: 0.6rem
+
+

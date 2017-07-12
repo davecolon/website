@@ -1,0 +1,58 @@
+nav
+	//class from mobile
+	#nav_elements
+		a.left
+			img#main-logo(src=images['mainLogo'])
+	
+		//new from mobile
+		a.hamMenu.right
+			img(src=images['menu_closed'])
+		.cleaner
+
+	//class and id from mobile
+	#menu-content.nav_hide
+		ul
+			//about
+			li.selected(class="menu_"+links[1].value)
+				div
+					a(href='#'+links[1].value) #{links[0].value}
+					.selector
+			//the product
+			li(class="menu_"+links[3].value)
+				div
+					a(href='#'+links[3].value) #{links[2].value}
+					.selector
+			//flavors
+			li(class="menu_"+links[5].value)
+				div
+					a(href='#'+links[5].value) #{links[4].value}
+					.selector
+			//who we are
+			li(class="menu_"+links[7].value)
+				div
+					a(href='#'+links[7].value) #{links[6].value}
+					.selector
+			//videos
+			//li(class="menu_"+links[9].value)
+				div
+					a(href='#'+links[9].value) #{links[8].value}
+					.selector
+			//research
+			li(class="menu_"+links[11].value)
+				div
+					a(href='#'+links[11].value) #{links[10].value}
+					.selector
+			//locations
+			li(class="menu_"+links[13].value)
+				div
+					a(href='#'+links[13].value) #{links[12].value}
+					.selector
+			//buy now
+			li(id="amazon_link" class="menu_"+links[15].value)
+				div
+					if links[17].value
+						a(href=''+links[17].value target="_blank") #{links[14].value}
+						.selector
+					else
+						a(href="https:/store.kplusorganics.com" target="_blank" name="default store") #{links[14].value}
+						.selector

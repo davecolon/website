@@ -1,0 +1,59 @@
+@font-face
+	font-family: font_avenir
+	src: url(../assets/fonts/AvenirNext-Regular.ttf)
+	font-weight: normal
+@font-face
+	font-family: font_avenir
+	src: url(../assets/fonts/AvenirNext-Bold.ttf)
+	font-weight: bold
+@font-face
+	font-family: font_avenir
+	src: url(../assets/fonts/AvenirNext-Heavy.ttf)
+	font-weight: 800
+
+$title_font: Avenir Next, font_avenir//800 heavy -  normal  - bold
+
+//colors used
+$dark_purple: #654466
+$light_purple: #aa6dae
+$dark_red: #aa2b5c
+$light_red: #e74977
+$orange: #f16d36
+$yellow: #febe2e
+$green: #d1d42a
+$light_gray: #e5e5e5
+
+//mediaquery values
+$mediaValueMobile: 880px
+$mediaValueSmallPhones: 450px
+$mediaHeightBreak: 815px
+$mediaWidthLandScapeBreak: 1301px
+
+html
+	font-size: 14px
+
+h1, h2, h3, p, li 
+	color: white
+	font-family: $title_font
+	font-weight: normal
+
+body
+
+	font: 1rem $title_font, helvetica, Arial, sans-serif
+	margin: 0
+
+	//for edge
+	width: 100% 
+	overflow-x: hidden
+
+	.left
+		float: left
+	
+	.right
+		float: right
+	
+	.cleaner
+		clear: both
+
+@import navbar
+@import mainContent
