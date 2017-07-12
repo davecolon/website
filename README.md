@@ -47,7 +47,7 @@ The content is being pull out from googlesheet, any copy change must be done the
 ## Deploy
 + Go to the project on the [Google cloud console](https://console.cloud.google.com/)
 + Select **Compute Engine** and click on `SSH` for connecting to the VM
-+ Go to k-plus folder
++ Go to website folder, `cd website`
 + Pull the last changes from the github repository `git pull`
 + Call the following commands to deploy the server:
   1. `sudo pm2 kill`
@@ -56,9 +56,10 @@ The content is being pull out from googlesheet, any copy change must be done the
   4. `sudo pm2 save`
   5. `sudo reboot`
 
-
-In case of seeing the apache template when navigating to the url, you will have to kill apache and then follow the deployment steps again.
-Killing Apache: `sudo update-rc.d -f  apache2 remove`
+## Killing Apache:
+In case of seeing the apache template when navigating to the url, you will have to kill apache and then follow the deployment steps again, starting from step 2.
++ `sudo update-rc.d -f  apache2 remove`
++ `sudo reboot`
 
 
 More info [Setting up express on google compute](https://codepen.io/positlabs/post/setting-up-express-on-google-compute)
