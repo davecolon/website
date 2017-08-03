@@ -47,12 +47,21 @@ nav
 				div
 					a(href='#'+links[13].value) #{links[12].value}
 					.selector
-			//buy now
-			li(id="amazon_link" class="menu_"+links[15].value)
+			//contact
+			li(class="menu_"+links[15].value)
 				div
-					if links[17].value
-						a(href=''+links[17].value target="_blank") #{links[14].value}
+					if links[16].value
+						a(href='mailto:'+links[17].value) #{links[14].value}
 						.selector
 					else
-						a(href="https:/store.kplusorganics.com" target="_blank" name="default store") #{links[14].value}
+						a(href="mailto:info@kplusorganics.com" name="info email") #{links[14].value}
+						.selector
+			//buy now
+			li(id="amazon_link" class="menu_"+links[19].value)
+				div
+					if links[20].value
+						a(href=''+links[21].value target="_blank") #{links[18].value}
+						.selector
+					else
+						a(href="https:/store.kplusorganics.com" target="_blank" name="default store") #{links[18].value}
 						.selector
