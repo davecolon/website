@@ -192,7 +192,8 @@ module.exports = {
 				getDataCms(3,3,200,10,11), //content_research
 				getDataCms(3,3,200,13,14), //content_location
 				getDataCms(3,3,200,16,17), //content_footer
-				getDataCms(3,3,200,19,20) //content_flavor
+				getDataCms(3,3,200,19,20), //content_flavor
+				getDataCms(3,3,200,22,23) //content_contact
 				])
 		}
 		return cachedSheetPromise

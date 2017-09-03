@@ -16,6 +16,7 @@ router.get('/', (req, res, next) => {
 			cont_location : cmsData[7],
 			cont_footer : cmsData[8],
 			cont_flavor : cmsData[9],
+			cont_contact : cmsData[10],
 			title: 'k+'
 		})
 	}).catch(err => { console.error(err) })

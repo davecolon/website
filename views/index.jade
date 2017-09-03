@@ -1,7 +1,7 @@
 extends layout
 block content
 	include navbar
-	
+
 	.container
 		//intro
 		div.prev(id=links[1].value)
@@ -177,6 +177,16 @@ block content
 					if res_index-1 >= 3
 						.res_btn_more
 							p=cont_research["btn_more"]+" more"
+
+		//contact
+		div.prev(id=links[15].value)
+			div.internal_wrapper
+				h3=cont_contact["title"]
+				p="Email: "
+					a(href="mailto:" + cont_contact["email_link"])=cont_contact["email_link"]
+
+				p="Media and Press Inquiries: " 
+					a(href="mailto:" + cont_contact["heather_email"])=cont_contact["heather_email"]
 
 		//locations
 		div.prev(id=links[13].value)
