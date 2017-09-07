@@ -24,7 +24,7 @@ function setMobileMenuHeight(){
 	if($(window).width()<=865){
 		var nH = $(window).height()-$("#nav_elements").outerHeight()
 		$("#menu-content").height((nH)+"px")
-		$("#menu-content").find("li").height(((nH/7)-1)+"px")
+		$("#menu-content").find("li").height(((nH/8)-1)+"px")
 	}else{
 		$("#menu-content").height("inherit")
 		$("#menu-content").find("li").height("inherit")
