@@ -83,6 +83,12 @@ block content
 					if description[x]!=="" && description[x]!== undefined
 						p= description[x]
 				- }
+
+				- var description= cont_who_we["text_body_2"].split("\n")
+				- for (var x = 0; x < description.length; x++){
+					if description[x]!=="" && description[x]!== undefined
+						p= description[x]
+				- }
 		
 		//videos 
 		//div.prev(id=links[9].value)
@@ -135,6 +141,11 @@ block content
 		//transitionalscreen		
 		//#tran_screen.prev.transition
 
+		// press
+		div.prev(id=links[23].value)
+			div.internal_wrapper
+				h3=links[22].value
+
 		//research
 		div.prev(id=links[11].value)
 			div.internal_wrapper
@@ -177,6 +188,17 @@ block content
 					if res_index-1 >= 3
 						.res_btn_more
 							p=cont_research["btn_more"]+" more"
+
+		//contact
+		div.prev(id=links[15].value)
+			div.internal_wrapper
+				h3=cont_contact["title"]
+				p="Email: "
+					a(href="mailto:" + cont_contact["email_link"])=cont_contact["email_link"]
+
+				p="Media and Press Inquiries: " 
+					a(href="mailto:" + cont_contact["heather_email"])=cont_contact["heather_email"]
+
 
 		//locations
 		div.prev(id=links[13].value)

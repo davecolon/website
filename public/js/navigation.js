@@ -12,7 +12,7 @@ var Navigation = function(options) {
 
         //hide and unhide the menu elements on mobile devices
 		$("#nav_elements .hamMenu, #menu-content li").on("click",function(){
-            if($(window).width()<866){
+            if($(window).width()<880){
                 $("#menu-content").toggleClass( "nav_hide" )
             }
 		})

@@ -250,15 +250,18 @@
 
 	#whoWeAre
 		background-image: url("../assets/img/desktop_who_we_bg.jpg")
+		height: 100%
+		padding-bottom: 4rem
 
 		div
 			display: inline-block
 			p
-				width: 45%
+				font-size: 1.8rem
+				width: 90%
 				@media (max-width: 1400px)
-					width: 65%
+					width: 90%
 					@media (max-width: 1000px)
-						width: 80%
+						width: 90%
 
 	#videos
 		display: block
@@ -375,13 +378,23 @@
 					opacity: 1
 					padding: 0
 
+	#press
+		height: 100%
+  	margin-top: 4rem
+
+		h3
+			color: $dark_purple
+		p
+			color: #000000
+
+
 
 	#research
 		height: 100%
 		margin-top: 4rem
 		
 		h3, p
-			color: $dark_purple
+			color: $light_purple
 			margin: 0
 
 		.research_container
@@ -475,6 +488,16 @@
 			
 			.res_btn_more p:active
 				color: $light_purple
+
+	#contact
+		height: 100%
+		padding-bottom: 4rem
+
+		h3, a, p
+			color: $dark_purple
+
+		a:hover
+			opacity: 0.9
 
 	#locations
 		background: $dark_purple
@@ -600,6 +623,9 @@
 
 		#whoWeAre
 			background-image: url("../assets/img/mobile_who_we_bg.jpg")
+			height: 100%
+			padding-bottom: 4rem
+
 			div
 				p
 					width: 100%
@@ -637,6 +663,7 @@
 							width: 1rem
 							img
 								padding: 0.1rem
+		
 		#research
 			display: block
 			padding: 0 0
@@ -819,6 +846,8 @@
 
 		#whoWeAre
 			height: 100%
+			padding-bottom: 4rem
+
 		#research
 			.research_container
 				p

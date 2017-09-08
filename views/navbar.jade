@@ -37,6 +37,11 @@ nav
 				div
 					a(href='#'+links[9].value) #{links[8].value}
 					.selector
+			//press
+			li(class="menu_"+links[23].value)
+				div
+					a(href='#'+links[23].value) #{links[22].value}
+					.selector
 			//research
 			li(class="menu_"+links[11].value)
 				div
@@ -50,11 +55,11 @@ nav
 			//contact
 			li(class="menu_"+links[15].value)
 				div
-					if links[16].value
-						a(href='mailto:'+links[17].value) #{links[14].value}
+					if links[14].value
+						a(href='#'+links[15].value) #{links[14].value}
 						.selector
 					else
-						a(href="mailto:info@kplusorganics.com" name="info email") #{links[14].value}
+						a(href="mailto:info@kplusorganics.com" name="info email") #{links[15].value}
 						.selector
 			//buy now
 			li(id="amazon_link" class="menu_"+links[19].value)
@@ -65,3 +70,20 @@ nav
 					else
 						a(href="https:/store.kplusorganics.com" target="_blank" name="default store") #{links[18].value}
 						.selector
+
+			li
+				div 
+					span.bar | 
+					span.hashtag #kplusorganics
+
+					ul.social_links
+						//social media links
+						li(class="social_link")
+							a(href="https://www.instagram.com/kplusorganics" target="_blank" name="instagram")
+								img(src=images['instagram_logo'])
+						li(class="social_link")
+							a(href="https://www.facebook.com/kplusorganics" target="_blank" name="facebook")
+								img(src=images['facebook_logo'])
+						li(class="social_link")
+							a(href="https://twitter.com/Kplusorganics" target="_blank" name="twitter")
+								img(src=images['twitter_logo'])
