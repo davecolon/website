@@ -144,7 +144,29 @@ block content
 		// press
 		div.prev(id=links[23].value)
 			div.internal_wrapper
-				h3=links[22].value
+
+				div.press_element
+					p.press_title=cont_press["press_title_1"]
+					p.press_subtitle=cont_press["press_subtitle_1"]
+						span.press_date=cont_press["press_date_1"]
+
+					div.youtube-embed
+						div.videoWrapper
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/tkf2yqNGD0Q?rel=0" frameborder="0" allowfullscreen></iframe>
+
+				div.press_element
+					a(href=cont_press["press_link_2"] target="_blank")
+						p.press_title=cont_press["press_title_2"]
+					p.press_subtitle=cont_press["press_subtitle_2"]
+						span.press_date=cont_press["press_date_1"]
+					p.press_text=cont_press["press_text_2"]
+
+				div.press_element
+					a(href=cont_press["press_link_3"] target="_blank")
+						p.press_title=cont_press["press_title_3"]
+					p.press_subtitle=cont_press["press_subtitle_3"]
+						span.press_date=cont_press["press_date_3"]
+					p.press_text=cont_press["press_text_3"]
 
 		//research
 		div.prev(id=links[11].value)
