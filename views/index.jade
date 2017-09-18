@@ -84,11 +84,10 @@ block content
 						p= description[x]
 				- }
 
-				- var description= cont_who_we["text_body_2"].split("\n")
-				- for (var x = 0; x < description.length; x++){
-					if description[x]!=="" && description[x]!== undefined
-						p= description[x]
-				- }
+				p
+					strong=cont_who_we["text_body_2"]
+				img.left.michelle(src=images['michelle'] width=150)
+				p=cont_who_we["text_body_3"]
 		
 		//videos 
 		//div.prev(id=links[9].value)
